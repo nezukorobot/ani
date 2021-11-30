@@ -24,21 +24,8 @@ if os.environ.get('USER_SESSION'):
     has_user: bool = True
     user = Client(os.environ.get('USER_SESSION'), api_id=API_ID, api_hash=API_HASH)
 
-HELP_DICT['Misc'] = '''
-Group based commands:
 
-/settings - Toggle stuff like whether to allow 18+ stuff in group or whether to notify about aired animes
-
-/disable - Disable use of a cmd in the group (Disable multiple cmds by adding space between them)
-`/disable anime anilist me user`
-
-/enable - Enable use of a cmd in the group (Enable multiple cmds by adding space between them)
-`/enable anime anilist me user`
-
-/disabled - List out disabled cmds
-'''
-
-HELP_DICT["Additional"] = """Use /reverse cmd to get reverse search via tracemoepy API
+HELP_DICT["Additional CMDS"] = """Use /reverse cmd to get reverse search via tracemoepy API
 __Note: This works best on uncropped anime pic,
 when used on cropped media, you may get result but it might not be too reliable__
 
@@ -49,7 +36,7 @@ Use /watch cmd to get watch order of searched anime
 Use /fillers cmd to get a list of fillers for an anime
 """
 
-HELP_DICT["Anilist"] = """
+HELP_DICT["Anilist Commands"] = """
 Below is the list of basic anilist cmds for info on anime, character, manga, etc.
 
 /anime - Use this cmd to get info on specific anime using keywords (anime name) or Anilist ID
@@ -70,7 +57,7 @@ Below is the list of basic anilist cmds for info on anime, character, manga, etc
 /user - Use this cmd to get info on an anilist user
 """
 
-HELP_DICT["Oauth"] = """
+HELP_DICT["Auth Anilist"] = """
 This includes advanced anilist features
 
 Use /auth or !auth cmd to get details on how to authorize your Anilist account with bot
