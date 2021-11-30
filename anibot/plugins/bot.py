@@ -462,11 +462,6 @@ async def pong_(client: anibot, message: Message, mdata: dict):
     await x.edit_text(f"__Pong!!!__\n`{pt} ms`")
 
 
-@anibot.on_message(filters.private & filters.command(['feedback', f'feedback{BOT_NAME}'], prefixes=trg))
-@control_user
-async def feed_(client: anibot, message: Message, mdata: dict):
-    owner = (await client.get_users(OWNER[0])).username
-    await client.send_message(mdata['chat']['id'], f"For issues or queries please contact @{owner} or join @hanabi_support")
 
 ###### credits to @NotThatMF on tg since he gave me the code for it ######
 
