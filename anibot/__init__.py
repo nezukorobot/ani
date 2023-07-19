@@ -1,17 +1,28 @@
 import os
 from pyrogram import Client
 
-TRIGGERS = os.environ.get("TRIGGERS", "/ !").split()
-API_HASH = os.environ.get("API_HASH")
-BOT_TOKEN = os.environ.get("BOT_TOKEN")
-BOT_NAME = os.environ.get("BOT_NAME")
-DB_URL = os.environ.get("DATABASE_URL")
-ANILIST_CLIENT = os.environ.get("ANILIST_CLIENT")
-ANILIST_SECRET = os.environ.get("ANILIST_SECRET")
+TRIGGERS = "/ !"
+
+API_HASH = "d22a4d25860c6673209ea07dc194857a"
+
+BOT_TOKEN = "6201307785:AAG0gB_uqvs9_konxBuLouEH9fwvwIQdzsM"
+
+BOT_NAME = "Animedownlpadtestbot"
+
+DB_URL = "mongodb+srv://animee:animee@cluster0.slhrnx2.mongodb.net/?retryWrites=true&w=majority"
+
+ANILIST_CLIENT = 13589
+
+ANILIST_SECRET = "96GWEddHcUUv3ydd5VJyMWl0Exg9OteggIJzavhM"
+
 ANILIST_REDIRECT_URL = os.environ.get("ANILIST_REDIRECT_URL", "https://anilist.co/api/v2/oauth/pin")
-API_ID = int(os.environ.get("API_ID"))
-LOG_CHANNEL_ID = int(os.environ.get("LOG_CHANNEL_ID"))
-OWNER = list(filter(lambda x: x, map(int, os.environ.get("OWNER_ID", "1005170481 972029825").split())))  ## sudos can be included
+
+API_ID = 7211896
+
+LOG_CHANNEL_ID = -1001927205991
+
+OWNER = list(filter(lambda x: x, map(int, os.environ.get("OWNER_ID", "6113550151 804248372 1993696756").split())))  ## sudos can be included
+
 
 DOWN_PATH = "anibot/downloads/"
 HELP_DICT = dict()
